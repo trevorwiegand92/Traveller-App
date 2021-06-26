@@ -1,8 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Traveller extends Model { }
+// create our Traveller model
+class Traveller extends Model {}
 
+// create fields/columns for Traveller model
 Traveller.init(
   {
     id: {
@@ -32,5 +34,5 @@ Traveller.init(
     modelName: 'traveller'
   }
 );
-module.exports = Traveller;
 
+module.exports = Traveller;
